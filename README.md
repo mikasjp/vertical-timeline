@@ -14,7 +14,7 @@ I hope you like it!
  or
  ```html
 <style>
-    The contents of the style.css file goes here
+    /* The contents of the style.css file goes here */
 </style>
  ```
 2. Now you can create your own timeline.
