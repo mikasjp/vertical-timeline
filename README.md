@@ -30,6 +30,7 @@ I hope you like it!
  ```
  You can put as many events as you like. Just add more list items according to the example above.
  If you have any problems, just look at the demo.
+ 
 3.  **[OPTIONAL STEP]** If you want, you can change the colors of the timeline elements. At the beginning of the style.css file there are variables that you can edit.
  ```css
  :root
