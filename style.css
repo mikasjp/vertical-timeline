@@ -2,6 +2,7 @@
 {
     /* Main */
     --vtimeline-bg-color: transparent;
+    --vtimeline-fade-display: block;    /* Options: block or none. The effect will occur if --vtimeline-bg-color is not transparent. */
 
     /* Branch */
     --vtimeline-branch-color: rgb(220, 220, 220);
@@ -28,6 +29,33 @@ div.vtimeline ul
     margin-left: 20px;
     padding: 20px 40px;
 }
+
+
+div.vtimeline ul:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -5px;
+    pointer-events: none;
+    background-image: linear-gradient(to top, transparent, var(--vtimeline-bg-color) 90%);
+    width: 100%;
+    height: 4em;
+    display: var(--vtimeline-fade-display);
+  }
+  
+  div.vtimeline ul:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -5px;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, transparent, var(--vtimeline-bg-color) 90%);
+    width: 100%;
+    height: 4em;
+    display: var(--vtimeline-fade-display);
+  }
 
 div.vtimeline li
 {
